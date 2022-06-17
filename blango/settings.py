@@ -21,10 +21,10 @@ class Dev(Configuration):
   # Build paths inside the project like this: BASE_DIR / 'subdir'.
   BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+  EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
   # Quick-start development settings - unsuitable for production
   # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
+  ACCOUNT_ACTIVATION_DAYS = 7
   # SECURITY WARNING: keep the secret key used in production secret!
   SECRET_KEY = 'django-insecure-+sn%dpa!086+g+%44z9*^j^q-u4n!j(#wl)x9a%_1op@zz2+1-'
 
